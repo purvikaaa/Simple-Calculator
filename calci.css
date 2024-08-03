@@ -1,0 +1,86 @@
+/* CSS for header */
+header {
+    background-color: #090909; /* Pleasant blue background */
+    color: #fff; /* White text color */
+    padding: 20px; /* Space inside the header */
+    text-align: center; /* Center-aligns the text */
+    font-size: 24px; /* Font size for the heading */
+    font-weight: bold; /* Makes the text bold */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    margin: 0; /* Removes default margin */
+    position: fixed; /* Fixes header at the top */
+    top: 0; /* Aligns the header at the top */
+    left: 0; /* Aligns the header to the left */
+    width: 100%; /* Full width of the viewport */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    z-index: 1000; /* Ensures header is above other content */
+}
+
+/* CSS for the calculator container */
+.calculator {
+    background-color: #fff; /* White background for the calculator */
+    padding: 20px; /* Padding around the calculator */
+    border-radius: 10px; /* Rounded corners for the calculator */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 400px; /* Maximum width of the calculator */
+    margin: 80px auto 0; /* Margin top to push the calculator down from the header */
+}
+
+/* CSS for display */
+#display {
+    width: 100%; /* Full width of the calculator container */
+    height: 40px; /* Height of the display */
+    font-size: 1.5em; /* Font size for display text */
+    margin-bottom: 10px; /* Space below the display */
+    padding: 10px; /* Padding inside the display */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    border: 2px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded corners for the display */
+    text-align: right; /* Right-aligns text */
+}
+
+/* CSS for buttons container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+/* CSS for individual buttons */
+.btn {
+    padding: 20px; /* Padding inside buttons */
+    font-size: 1.2em; /* Font size for button text */
+    background-color: #e0e0e0; /* Light grey background */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* CSS for button hover effect */
+.btn:hover {
+    background-color: #d5d5d5; /* Slightly darker grey on hover */
+}
+
+/* CSS for operator buttons */
+.operator {
+    background-color: #f9a825; /* Yellow background for operator buttons */
+}
+
+/* CSS for operator button hover effect */
+.operator:hover {
+    background-color: #f57f17; /* Darker yellow on hover */
+}
+
+/* CSS for equals button */
+#equals {
+    grid-column: span 4; /* Spans across all four columns */
+    background-color: #4caf50; /* Green background for equals button */
+    color: #fff; /* White text color */
+}
+
+/* CSS for equals button hover effect */
+#equals:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
